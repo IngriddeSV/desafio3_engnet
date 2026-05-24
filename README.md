@@ -38,7 +38,7 @@ Requisitos obrigatórios não-funcionais:
 
 ## O Entregue:
 
-O Painel de Localidades foi desenvolvido alcançando máxima fidelidade ao protótipo do Figma e cumprindo os requisitos funcionais e não-funcionai. A aplicação centraliza a busca de dados territoriais em tempo real de forma simples e de fácil entendimento para quem for utilizar. 
+O Painel de Localidades foi desenvolvido alcançando máxima fidelidade ao protótipo do Figma e cumprindo os requisitos funcionais e não-funcionais. A aplicação centraliza a busca de dados territoriais em tempo real de forma simples e de fácil entendimento para quem for utilizar. 
 
 ### Principais Tecnologias Utilizadas:
 
@@ -48,7 +48,7 @@ O Painel de Localidades foi desenvolvido alcançando máxima fidelidade ao prot�
 - **Google Fonts (Marko One)** 
 
 ### Funcionalidades:
-
+- **Pesquisas usando o número das UF's**;
 - **Integração em Tempo Real com o IBGE:**;
 - **KPIs Dinâmicos:**
 - **Filtro de Busca Local**
