@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAINEL LOCALIDADES - A.N.G.E.L.I.C.A</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>PAINEL LOCALIDADES - A.N.G.E.L.I.C.A</h1>
+    </header>
+
+    <main class="dashboard-container">
+      <section class="kpi-section">
+        <div class="kpi-card" id="card-id">
+          <h3>DIGITE UF:</h3>
+          <input type="text" id="uf-id-input" placeholder="XY" maxlength="2" />
+        </div>
+
+        <div class="kpi-card card-maior" id="card-contador">
+          <h3>TOTAL DE CIDADES ENCONTRADAS:</h3>
+          <p class="kpi-value" id="total-cidades">000</p>
+        </div>
+      </section>
+
+      <section class="accordion-section">
+        <button class="accordion-header" id="accordion-btn">
+          <span id="accordion-title">SELECIONE UMA UNIDADE FEDERATIVA</span>
+          <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </button>
+
+        <div class="accordion-content" id="accordion-drawer">
+          <div class="ufs-grid" id="ufs-container">
+            <span class="loading">Carregando estados...</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="municipio-search"
+            placeholder="Filtrar município na tabela..."
+            disabled
+          />
+        </div>
+      </section>
+
+      <section class="table-section">
+        <h2>MUNICÍPIOS CADASTRADOS</h2>
+
+        <div class="table-container">
+          <div class="table-header-grid">
+            <div class="th-item">CÓDIGO IBGE</div>
+            <div class="divider-v"></div>
+            <div class="th-item">NOME DO MUNICÍPIO</div>
+            <div class="divider-v"></div>
+            <div class="th-item">LOCALIZAÇÃO / MAPA</div>
+          </div>
+
+          <div class="table-body-scroll">
+            <table id="municipios-table">
+              <tbody id="table-body">
+                <tr>
+                  <td colspan="3" class="empty-state">
+                    Nenhuma UF selecionada ou digitada. Abra o menu ou digite o
+                    ID acima.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
